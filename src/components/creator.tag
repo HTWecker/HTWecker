@@ -11,7 +11,7 @@ import logo from "../img/bluetooth.svg";
     </div>
 
     <div class="row" if={ opts.type === "manual" }>
-      <div class="field four wide column">
+      <div class="field eight wide column">
         <select name="hours" class="ui search compact fluid dropdown">
           <option class="item" value="{ i }" each={ i in hours }>{ i }</option>
         </select>
@@ -21,7 +21,7 @@ import logo from "../img/bluetooth.svg";
         :
       </div>
 
-      <div class="field four wide column">
+      <div class="field eight wide column">
         <select name="minutes" class="ui search compact fluid dropdown">
           <option class="item" value="{ i }" each={ i in minutes }>{ i }</option>
         </select>
