@@ -3,12 +3,17 @@
   "version": "1.0.0",
   "description": "An alarm clock with .ics import",
   "main": "webpack.config.js",
+  "config": {
+    "build": "./build/",
+    "remote": "web@htwecker.localhorst.io:~/project"
+  },
   "scripts": {
     "html": "cpy ./src/index.html ./build/",
     "bundle": "webpack -p -d --progress --colors",
     "build": "npm-run-all html bundle",
     "serve": "webpack-dev-server --hot",
-    "dev": "npm-run-all html serve"
+    "dev": "npm-run-all html serve",
+    "deploy": "rsync -az --force --delete --progress $npm_package_config_build $npm_package_config_remote"
   },
   "author": "webkid.io",
   "license": "MIT",
