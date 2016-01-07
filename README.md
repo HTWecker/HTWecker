@@ -7,7 +7,7 @@ This project is based on:
 ## Installation
 
 ```
-$ npm install
+npm install
 ```
 
 You should additionally build `semantic-ui` using [gulp](http://gulpjs.com/):
@@ -20,14 +20,22 @@ gulp build
 ## Development
 
 ```
-$ npm run dev
+npm run dev
 ```
 
-Now the server is runnning on localhost:1337
+Now the server is runnning on [http://localhost:1337](http://localhost:1337)
 
 
 ## Build
 
 ```
-$ npm run build
+npm run build
+```
+
+## Deployment
+
+Requires `rsync`
+
+```
+npm run deploy
 ```
