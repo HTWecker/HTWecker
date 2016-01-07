@@ -3,7 +3,7 @@
 
   <style scoped>
   	#empty {
-  		margin: 40% 0 !important;
+  		margin-top: 40%;
   	}
   </style>
 </content>
