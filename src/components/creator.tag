@@ -64,6 +64,8 @@ import logo from "../img/bluetooth.svg";
   </form>
 
   <script>
+  this.on('mount', () => {
+
     $(document).ready(function() {
       $('.days').off('click');
       $('.days').click(event => {
@@ -97,6 +99,8 @@ import logo from "../img/bluetooth.svg";
       });
 
     });
+
+  });
 
     const prefixWithZero = (hour) => {
       if (hour.toString().length === 1) {
