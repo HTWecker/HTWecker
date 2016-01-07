@@ -59,7 +59,6 @@ import logo from "../img/bluetooth.svg";
 
     <div class="ui buttons actions row">
       <a onclick={ closeModal } class="ui negative button">Abbrechen</a>
-      <div class="or"></div>
       <a onclick={ closeModal } href="/#overview" class="ui positive button">Speichern</a>
     </div>
   </form>
