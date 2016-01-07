@@ -32,7 +32,7 @@ import logo from "../img/bluetooth.svg";
       <div class="seven column circular ui button center aligned days" each={ i in days }>{ i }</div>
     </div>
 
-    <a href="/#settings" class="row">
+    <a href="/#settings" class="ui button labeled icon">
       <i class="alarm outline icon"></i>
       <div>Klingelton</div>
     </a>
@@ -42,8 +42,8 @@ import logo from "../img/bluetooth.svg";
       <label>Vibrieren</label>
     </div>
 
-    <a href="/#settings" class="row">
-      <img src="img/bluetooth.svg" id="bluetooth" class="left column">
+    <a href="/#settings" class="ui button labeled icon">
+      <img src="img/bluetooth.svg" id="bluetooth" class="icon left column">
       <div>Bluetooth-Verknüpfung</div>
     </a>
 
@@ -121,7 +121,7 @@ import logo from "../img/bluetooth.svg";
   }
 
   #bluetooth {
-    min-width: 48px;
+    padding: 3px;
   }
 
   .inputfile {
