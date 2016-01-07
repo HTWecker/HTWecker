@@ -1,0 +1,19 @@
+{
+    "name": "HTWecker",
+	"launch_path": "/build/index.html",
+    "package_path" : "http://htwecker.localhorst.io/package.zip",
+    "version": "1",
+	"icons": {
+		"16": "/src/img/logo.png",
+		"48": "/src/img/logo.png",
+		"60": "/src/img/logo.png",
+		"128": "/src/img/logo.png"
+	},
+    "developer": {
+        "name": "HTWecker",
+        "url": "http://htwecker.localhorst.io"
+    },
+	"installs_allowed_from": [
+		"*"
+	]
+}

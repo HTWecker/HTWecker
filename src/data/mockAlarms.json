@@ -1,0 +1,9 @@
+[{
+	"name": "Test",
+	"time": "08:45",
+	"days": ["Mo", "Mi"]
+}, {
+	"name": "Test2",
+	"time": "9:00",
+	"days": "Fr"
+}]

@@ -1,0 +1,11 @@
+[{
+	"name": "Stummschalten nach",
+	"default": "10 min"
+}, {
+	"name": "Dauer Snooze",
+	"default": "10 min"
+}, {
+	"name": "Lautstärke"
+}, {
+	"name": "Verbundene Bluetooth-geräten"
+}]
