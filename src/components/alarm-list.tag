@@ -1,3 +1,5 @@
+const data = require('../data/mockAlarms.json');
+
 <alarm-list> 
   <div class="ui segments">
     <div class="ui segment grid" each={ items }>
@@ -16,7 +18,7 @@
   </div>
 
   <script>
-    this.items = opts.data;
+    this.items = data;
 
     this.on('mount', () => {
       console.log('ready')

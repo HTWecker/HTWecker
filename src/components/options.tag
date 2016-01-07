@@ -1,4 +1,4 @@
-import data from '../data/options.json';
+const data = require('../data/options.json');
 
 <options>
   <div class="ui segments">
