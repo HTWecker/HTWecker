@@ -1,33 +1,53 @@
 const data = require('../data/mockAlarms.json');
 
-<alarm-list> 
-  <div class="ui segments">
-    <div class="ui segment grid" each={ items }>
-      <h3 class="name">{ name }</h3>
-      <div class="row">
-        <h1 class="two wide column">{ time }</h1>
-        <div class="ui test toggle checkbox two wide column right floated">
-          <input name="status" type="checkbox" checked='checked'>
-        </div>
-      </div>
-      <div class="row">
-        <div class="ui two wide column sub header days">{ days }</div>
-        <i class="trash  two wide column outline icon right floated"></i>
-      </div>
-    </div>
-  </div>
+<alarm-list>
+  <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+    <tbody each={ items }>
+      <tr>
+        <td class="mdl-data-table__cell--non-numeric">
+          <div class="row">{ name }</div>
+          <div class="row">{ time }</div>
+          <div class="row days-overview">
+            <button class="days mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" each={ i in days }>{ i }</button>
+          </div>
+        </td>
+        <td>
+          <div class="row">
+            <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-{name}">
+              <input type="checkbox" id="switch-{name}" class="mdl-switch__input" checked>
+            </label>
+          </div>
+          <div class="row">
+            <i class="material-icons">delete</i>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 
   <script>
     this.items = data;
 
     this.on('mount', () => {
-      console.log('ready')
-      $('.toggle').checkbox();
-      console.log($('.toggle'));
+      componentHandler.upgradeAllRegistered();
     });
   </script>
 
-  <style>
+  <style scoped>
+    :scope {
+      height: 100%;
+    }
+
+    table {
+      width: 100%;
+      height: 100%
+
+    }
+    
+    td {
+      vertical-align: middle !important;
+    }
+
     .ui.sub.header.days {
       margin: 0 0 14px 14px;
     }
@@ -41,6 +61,17 @@ const data = require('../data/mockAlarms.json');
       margin-right: 2.25rem;
     }
 
+    .mdl-switch.mdl-js-switch.mdl-js-ripple-effect.mdl-js-ripple-effect--ignore-events.is-checked.is-upgraded,
+    .mdl-switch.mdl-js-switch.mdl-js-ripple-effect.mdl-js-ripple-effect--ignore-events.is-upgraded {
+      width: auto;
+      margin-bottom: 1.5em;
+    }
+
+    .days-overview {
+      transform: scale(0.5);
+      left: 0px;
+      margin-left: -34%;
+    }
   </style>
 
 </alarm-list>

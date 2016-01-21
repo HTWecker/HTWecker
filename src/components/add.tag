@@ -1,16 +1,15 @@
-<add class="ui bottom attached label centered grid">
-  <button id="add" class="circular ui icon button" onclick={ openAddModal }>
-    <i class="huge icon add"></i>
+<add class="mdl-mini-footer">
+  <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" onclick={ openAddModal }>
+    <i class="material-icons">add</i>
   </button>
 
   <script>
     this.openAddModal = () => $('#add-modal').modal('show');
   </script>
 
-  <style>
-  	add.bottom.attached.label {
-  		background: none;
-  		padding:15px;
-  	}
+  <style scoped>
+    :scope {
+      background-color: transparent !important;
+    }
   </style>
 </add>

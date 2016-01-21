@@ -1,20 +1,30 @@
 import logo from "../img/logo.png";
 
-<header class="ui two column grid">
-    <a href="/" class="column"><img src="img/logo.png" id="logo"></a>
-    <a href="#settings" class="column middle aligned">
-    	<i id="options" class="big options link icon">
-    </a>
+<header class="mdl-layout__header">
+ 
+    <div class="mdl-layout__header-row">
+      <a href="/" class="mdl-layout-title"><img src="img/logo.png" id="logo"></a>
 
-    <style>
-   		#logo {
-   			display: block;
-   			margin: 0 auto;
-   			width: 50%;
-   		}
+      <div class="mdl-layout-spacer"></div>
 
-    	#options {
-    		float: right;
-    	}
+      <a id="options" href="#settings" id="demo-menu-lower-right" class="column middle aligned mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">more_vert</i>
+      </a>
+    </div>
+
+    <style scoped>
+      :scope.mdl-layout__header {
+        display: flex;
+      }
+
+      img {
+        margin-top: -15px;
+      }
     </style>
+
+    <script>
+      this.on('mount', () => {
+        componentHandler.upgradeAllRegistered();
+      });
+    </script>
 </header>

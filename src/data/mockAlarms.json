@@ -5,5 +5,5 @@
 }, {
 	"name": "Test2",
 	"time": "9:00",
-	"days": "Fr"
+	"days": ["Fr"]
 }]

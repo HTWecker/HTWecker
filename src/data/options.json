@@ -6,6 +6,8 @@
 	"default": "10 min"
 }, {
 	"name": "Lautstärke"
+},{
+	"name": "Vibration"
 }, {
 	"name": "Verbundene Bluetooth-geräten"
 }]

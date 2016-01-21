@@ -1,1 +1,9 @@
 @import '../../node_modules/normalize.css/normalize.css';
+
+body {
+  min-height: 100%;
+}
+
+.picker__list-item {
+	text-align: center;
+}

@@ -1,9 +1,19 @@
 <content>
-  <h2 id="empty" class="ui center aligned header"> Noch keine Wecker erstellt </h2>
+  <div id="empty"> Keine Wecker </div>
 
   <style scoped>
-  	#empty {
-  		margin-top: 40%;
-  	}
+	:scope {
+		width: 100%;
+	    height: 100%;
+	    line-height: 100px;
+		text-align: center;
+	}
+
+	#empty {
+		font-size: 2em;
+		margin-top: 20%;
+		vertical-align: middle;
+		display: inline-block;
+	}
   </style>
 </content>

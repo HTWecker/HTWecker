@@ -1,17 +1,24 @@
 <add-modal id="add-modal" class="ui modal">
-    <div class="ui segments actions">
-      <div class="ok ui center aligned segment choose link item" onclick={ openCreateModal }>
-        <a>Manueller Wecker</a>
-      </div>
-      <div class="ok ui center aligned segment choose" onclick={ openLSFModal }>
-        <a>LSF-Wecker</a>
-      </div>
-    </div>
-  </div>
+  <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+    <tbody>
+      <tr onclick={ openCreateModal }>
+        <td class="mdl-data-table__cell--non-numeric">Manueller Wecker</td>
+      </tr>
+      <tr onclick={ openLSFModal }>
+        <td class="mdl-data-table__cell--non-numeric">LSF-Wecker</td>
+      </tr>
+    </tbody>
+  </table>
 
-  <style>
-    .choose {
-      font-size: 2em;
+  <style scoped>
+    table {
+      width: 100%;
+    }
+
+    td.mdl-data-table__cell--non-numeric.mdl-data-table__cell--non-numeric {
+      text-align: center;
+      font-size: 2.2em;
+      padding: 3% 0px;
     }
   </style>
 
